@@ -21,7 +21,7 @@
 ::Chef::Resource.send(:include, Opscode::Ntp::Helper)
 
 if platform_family?('windows')
-  include_recipe 'ntp::windows_client'
+  include_recipe 'spinen-ntp::windows_client'
 else
 
   node['ntp']['packages'].each do |ntppkg|
@@ -44,7 +44,7 @@ else
     notifies :restart, "service[#{node['ntp']['service']}]"
   end
 
-  include_recipe 'ntp::apparmor' if node['ntp']['apparmor_enabled']
+  include_recipe 'spinen-ntp::apparmor' if node['ntp']['apparmor_enabled']
 end
 
 unless node['ntp']['servers'].size > 0

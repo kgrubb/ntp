@@ -1,14 +1,29 @@
-NTP Cookbook
+SPINEN NTP Cookbook
 ============
 [![Build Status](https://secure.travis-ci.org/gmiranda23/ntp.png?branch=master)](http://travis-ci.org/gmiranda23/ntp)
 
-Installs and configures ntp. On Windows systems it uses the Meinberg port of the standard NTPd client to Windows.
+**NOTICE** This is a placeholder NTP cookbook, since the official cookbook
+currently has a bug that is spamming syslog).
+
+This cookbook installs and configures ntp. On Windows systems it uses the
+Meinberg port of the standard NTPd client to Windows.
 
 ### About Testing
 
-In addition to providing interfaces to the ntp time service, this recipe is also designed to provide a simple community cookbook with broad cross-platform support to serve as a testing documentation reference. This cookbook utilizes [Foodcritic](http://acrmp.github.io/foodcritic/), [Test-Kitchen](https://github.com/opscode/test-kitchen), [Vagrant](http://www.vagrantup.com), [Chefspec](http://acrmp.github.io/chefspec/), [bats](https://github.com/sstephenson/bats), [Rubocop](https://github.com/bbatsov/rubocop), and [Travis-CI](https://travis-ci.org) to provide a comprehensive suite of automated test coverage.
+In addition to providing interfaces to the ntp time service, this recipe is also
+designed to provide a simple community cookbook with broad cross-platform
+support to serve as a testing documentation reference. This cookbook utilizes [Foodcritic](http://acrmp.github.io/foodcritic/),
+[Test-Kitchen](https://github.com/opscode/test-kitchen),
+[Vagrant](http://www.vagrantup.com),
+[Chefspec](http://acrmp.github.io/chefspec/),
+[bats](https://github.com/sstephenson/bats),
+[Rubocop](https://github.com/bbatsov/rubocop), and
+[Travis-CI](https://travis-ci.org) to provide a comprehensive suite of automated
+test coverage.
 
-More information on the testing strategy used in this cookbook is available in the TESTING.md file, along with information on how to use this type of testing in your own cookbooks.
+More information on the testing strategy used in this cookbook is available in
+the TESTING.md file, along with information on how to use this type of testing
+in your own cookbooks.
 
 
 Requirements
